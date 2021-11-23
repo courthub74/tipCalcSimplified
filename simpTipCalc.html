@@ -21,14 +21,14 @@
             <!--INPUT PART-->
             <div class="inputs-container">
 
-                <h1>Input</h1>
-                <label for="input"></label>
+                <h1 class="bill-total">Input</h1>
                 <input type="text" id="input" placeholder="0">
 
                 <h2>Select Tip %</h2>
-                <button class="percent-button" type="button">5%</button>
-                <button class="percent-button" type="button">10%</button>
-                <button class="percent-button" type="button">20%</button>
+                <button id="five-button" type="button" onclick="printOut5()">5%</button>
+                <button id="ten-button" type="button" onclick="printOut10()">10%</button>
+                <button id="fifteen-button" type="button" onclick="printOut15()">15%</button>
+                <button id="twenty-button" type="button" onclick="printOut20()">20%</button>
 
             </div>
 
@@ -42,6 +42,8 @@
         </form>
 
         <footer class="foot">powered by CourDevelops L.L.C.</footer>
+
+        <script src="simpTipCalc.js"></script>
 
 
     </main>
