@@ -2,6 +2,7 @@
 
 const getBill = document.getElementById('input'); //whats entered into the text field
 const totalValue = document.getElementById('.total-value'); //location for print out
+const numOfPeople = document.getElementById('numOfPeople'); //whats entered into the num of people text field
 
 //for 5%
     //retrieve input by the button global variable
@@ -9,20 +10,24 @@ const totalValue = document.getElementById('.total-value'); //location for print
     //output the new value in the output display
 
 function printOut5() {
-    document.getElementById("total-value").innerHTML = `$${getBill.value * .05}`;
+    document.getElementById("total-value").innerHTML = `5% - $${getBill.value * .05 / numOfPeople.value}`;
 }
 
 function printOut10() {
-    document.getElementById("total-value").innerHTML = `$${getBill.value * .10}`;
+    document.getElementById("total-value").innerHTML = `10% - $${getBill.value * .10 / numOfPeople.value}`;
 }
 
 function printOut15() {
-    document.getElementById("total-value").innerHTML = `$${getBill.value * .15}`;
+    document.getElementById("total-value").innerHTML = `15% - $${getBill.value * .15 / numOfPeople.value}`;
 }
 
 function printOut20() {
-    document.getElementById("total-value").innerHTML = `$${getBill.value * .20}`;
+    document.getElementById("total-value").innerHTML = `20% - $${getBill.value * .20 / numOfPeople.value}`;
 }
+
+//NOW lets SPLIT AMONGST PEOPLE
+
+//if 10%,  divide .10 by the num of people entered
 
 //NOW lets change the Input label through this page
 
